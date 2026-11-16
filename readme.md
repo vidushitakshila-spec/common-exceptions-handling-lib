@@ -5,3 +5,4 @@
     <artifactId>common-exceptions-handling-lib/artifactId>
     <version>1.2.0</version>
 </dependency>
+

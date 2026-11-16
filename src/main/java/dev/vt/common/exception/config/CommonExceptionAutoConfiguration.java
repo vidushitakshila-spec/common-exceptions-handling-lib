@@ -1,12 +1,14 @@
 package dev.vt.common.exception.config;
 
+import dev.vt.common.exception.handlers.*;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
 @Import({
-        ValidationExceptionHandler.class,
-        DatabaseExceptionHandler.class,
+        SecurityExceptionHandler.class,
+        WebValidationExceptionHandler.class,
+        PersistenceExceptionHandler.class,
         GlobalFallbackHandler.class
 })
 public class CommonExceptionAutoConfiguration {
